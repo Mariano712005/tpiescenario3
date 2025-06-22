@@ -1,7 +1,10 @@
 # TPIEscenario3
 Integrantes: Retamoso mariano José
+
 Tema Numero 3: Inventario de Productos de un Comercio
+
 Descripción:
+
 En este Github se presentan 4 programas, pero en realidad son 2, 1 requiere que en la terminal se ejecute un comando que los una a los 3 para ser ejecutado, y el otro es una versión simplificada, en un solo programa. Primero vamos a empezar explicando el "triprograma" y como funciona este. Luego, explicaremos su versión individualizada y como funciona, para luego terminar comparandolos a los 2.
 
 TRIPROGRAMA:
@@ -12,7 +15,14 @@ Este programa gestiona un inventario de productos para comercios, permitiendo:
 - Almacenamiento persistente en archivo binario
 - Interfaz intuitiva con validación de datos
 
+Versión Simplificada:
+Sencillez: Ideal para principiantes en C
+Eficiencia: Menos sobrecarga que listas enlazadas
+Persistencia: Datos sobreviven al cerrar el programa
+Portabilidad: Solo 1 archivo fuente necesario
 Cumplimiento de Requisitos Técnicos
+
+Ahrora vamos a ver a detalle como funcionan estos programas, empezando por la version Modular (TRIPROGRAMA)
 
 1. Estructuras de Control e Iteradores
 ```c
@@ -117,20 +127,7 @@ gcc -o inventario main.c producto.c
 ./inventario
 
 Nota: El inventario se guarda automáticamente en inventario.dat 
-Características Destacadas
-1. **Validación robusta de entradas**:
-   - Control de códigos duplicados
-   - Verificación de valores numéricos válidos (precio/stock positivos)
-2. **Manejo de memoria seguro**:
-   - Liberación completa de memoria al salir
-   - Prevención de fugas en búsquedas
-3. **Persistencia de datos**:
-   - Almacenamiento en binario para eficiencia
-   - Carga automática al iniciar
-4. **Interfaz amigable**:
-   - Menú intuitivo con 7 opciones
-   - Mensajes de error descriptivos
-   - Formato consistente en visualizaciones
+
 
 
 
@@ -217,14 +214,6 @@ void agregarProducto();     // Añade nuevos items
 void buscarPorNombre();      // Búsqueda parcial
 void mostrarProductos();     // Listado completo
 
-Ventajas de esta versión
-Sencillez: Ideal para principiantes en C
-
-Eficiencia: Menos sobrecarga que listas enlazadas
-
-Persistencia: Datos sobreviven al cerrar el programa
-
-Portabilidad: Solo 1 archivo fuente necesario
 
 Instrucciones de Uso
 Compilación (Windows/Linux)
