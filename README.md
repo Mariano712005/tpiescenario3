@@ -15,6 +15,7 @@ TRIPROGRAMA (O MODULAR):
 - Interfaz intuitiva con validación de datos
 
 VERSIÓN SIMPLIFICADA
+
 Sencillez: Ideal para principiantes en C
 
 Eficiencia: Menos sobrecarga que listas enlazadas
