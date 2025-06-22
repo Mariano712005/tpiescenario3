@@ -381,7 +381,7 @@ Para desarrollo avanzado:
 
 # Compilar con advertencias habilitadas
 gcc -Wall -o inventario main.c producto.c
-Nota: Ambos programas crearán automáticamente un archivo inventario.dat que guarda todos los datos entre ejecuciones. ¡No lo elimines!
+Nota: Ambos programas crearán automáticamente un archivo inventario.dat que guarda todos los datos entre ejecuciones.
 
  Estructura del Proyecto
 Característica
@@ -435,4 +435,7 @@ Escalabilidad sin límites fijos
 Cumplimiento completo de requisitos técnicos
 
 
+Nota personal: Es impresionante como un enunciado que parecía simple en el documento de Word requirió una progrmación detallada, tanto para la versión modular como la simplificada. Si bien hubieron momentos tediosos a la hora de plantear la solución del problema, buscar ayuda para resolver el problema (tanto compañeros como tutores), plasmar la solución en un programa, ejecutar y compilar el programa (lo que llevó a plantearlo de nuevo y plasmarlo todo en un solo programa que también costó correr); este viaje en la resolución del enunciado llevó al limite mis conocimientos de Github, Git, Github Desktop, Visual Studio Code, terminales, archivos, etc. Todavía queda mucho por aprender, pero al menos creo tener una idea de a donde va esto.
+
+Muchas Gracias por esta experiencia única
 
