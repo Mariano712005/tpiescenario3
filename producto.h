@@ -20,7 +20,7 @@ Nodo * agregarProducto(Nodo * cabeza, Producto prod);
 Nodo * eliminarProducto(Nodo * cabeza, int codigo);
 void modificarProducto(Nodo * cabeza, int codigo);
 Producto * buscarPorCodigo(Nodo * cabeza, int codigo);
-Nodo * buscarPorNombre(Nodo * cabeza, const char* nombre);
+Nodo * buscarPorNombre(Nodo * cabeza, const char * nombre);
 void mostrarProductos(Nodo * cabeza);
 void mostrarProducto(Producto prod);
 void ordenarPorPrecio(Nodo * cabeza);
