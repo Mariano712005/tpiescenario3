@@ -235,6 +235,154 @@ Guardar automáticamente (Opción 8)
 Nota: Los datos se guardan en inventario.dat 
 
 
+Guía de Compilación y Ejecución para Usuarios sin Experiencia en C
+Para ambos programas (Simplificado y Modular)
+Requisitos previos:
+
+Tener instalado un compilador de C:
+
+Windows: MinGW
+
+Linux: sudo apt install gcc build-essential
+
+Descargar los archivos del proyecto:
+
+Opción A: Clonar repositorio de GitHub
+
+Opción B: Descargar archivos manualmente a una carpeta local
+
+I. Instrucciones Generales (Terminal)
+Versión Simplificada (1 archivo)
+
+# 1. Navegar a la carpeta del proyecto
+cd ruta/a/tu/carpeta
+
+# 2. Compilar
+gcc -o inventario inventario.c
+
+# 3. Ejecutar
+# Windows:
+inventario.exe
+# Linux:
+./inventario
+Versión Modular (3 archivos)
+
+# 1. Navegar a la carpeta del proyecto
+cd ruta/a/tu/carpeta
+
+# 2. Compilar
+gcc -o inventario main.c producto.c
+
+# 3. Ejecutar
+# Windows:
+inventario.exe
+# Linux:
+./inventario
+II. Instrucciones para Visual Studio Code
+Configuración inicial:
+Instalar extensión C/C++ de Microsoft
+
+Instalar extensión Code Runner
+
+Pasos para ejecutar:
+Abrir la carpeta del proyecto en VS Code
+
+Abrir el archivo principal:
+
+Simplificado: inventario.c
+
+Modular: main.c
+
+Ejecutar con Code Runner:
+
+Click en ícono ▷ de la esquina superior derecha
+
+O presionar Ctrl+Alt+N
+
+Configurar compilación manual (opcional):
+Crear archivo tasks.json en carpeta .vscode:
+
+json
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Compilar Inventario",
+            "command": "gcc",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                // Para versión modular agregar:
+                "producto.c",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
+III. Escenarios Comunes
+A. Si tienes GitHub:
+
+# Clonar repositorio
+git clone https://github.com/tu-usuario/tu-repositorio.git
+cd tu-repositorio
+
+# Seguir instrucciones de compilación según la versión
+B. Si tienes archivos locales:
+Crear nueva carpeta en tu escritorio
+
+Guardar todos los archivos .c y .h en esta carpeta
+
+Seguir instrucciones de terminal o VS Code
+
+IV. Solución de Problemas Comunes
+Error "gcc no reconocido" (Windows):
+
+Reinstalar MinGW marcando "gcc" en la instalación
+
+Agregar ruta de instalación (ej: C:\MinGW\bin) al PATH del sistema
+
+Error de archivos faltantes (Modular):
+
+Asegurarse que todos estos archivos estén en la misma carpeta:
+
+text
+main.c
+producto.c
+producto.h
+Permiso denegado (Linux):
+
+
+chmod +x inventario
+./inventario
+V. Flujo de Trabajo Recomendado
+Para principiantes:
+
+Usar versión simplificada
+
+Ejecutar con Code Runner en VS Code
+
+Para entrega de trabajo:
+
+Usar versión modular
+
+Compilar con terminal
+
+Incluir archivo inventario.dat con datos de ejemplo
+
+Para desarrollo avanzado:
+
+
+# Compilar con advertencias habilitadas
+gcc -Wall -o inventario main.c producto.c
+Nota: Ambos programas crearán automáticamente un archivo inventario.dat que guarda todos los datos entre ejecuciones. ¡No lo elimines!
+
  Estructura del Proyecto
 Característica
                           Versión Simplificada	                  Versión Modular (3 archivos)
