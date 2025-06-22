@@ -26,7 +26,7 @@ Portabilidad: Solo 1 archivo fuente necesario
 
 Ahrora vamos a ver a detalle como funcionan estos programas, empezando por la version Modular (TRIPROGRAMA)
 
-1. Estructuras de Control e Iteradores
+Estructuras de Control e Iteradores
 ```c
 // Ejemplo en main.c
 do {
@@ -40,7 +40,7 @@ for (Nodo* actual = cabeza; actual != NULL; actual = actual->siguiente) {
     // Procesamiento de nodos
 }
 
-2. Interacción con el Usuario
+Interacción con el Usuario
 // Consola (main.c)
 printf("Nombre: ");
 fgets(nuevo.nombre, MAX_NOMBRE, stdin);
@@ -48,7 +48,7 @@ fgets(nuevo.nombre, MAX_NOMBRE, stdin);
 // Archivos (producto.c)
 FILE* archivo = fopen(ARCHIVO_INVENTARIO, "wb");
 
-3. Estructuras (struct)
+Estructuras (struct)
 // producto.h
 typedef struct {
     int codigo;
@@ -57,7 +57,7 @@ typedef struct {
     int stock;
 } Producto;
 
-4. Ordenamiento y Búsqueda
+Ordenamiento y Búsqueda
 // Ordenamiento por precio (Bubble Sort)
 void ordenarPorPrecio(Nodo * cabeza) {
     // Implementación completa en producto.c
@@ -73,7 +73,7 @@ Producto * buscarPorCodigo(Nodo * cabeza, int codigo) {
     return NULL;
 }
 
-5. Estructuras Dinámicas (Lista Enlazada)
+Estructuras Dinámicas (Lista Enlazada)
 // producto.h
 typedef struct Nodo {
     Producto producto;
@@ -84,7 +84,7 @@ typedef struct Nodo {
 Nodo * agregarProducto(Nodo * cabeza, Producto prod);
 Nodo * eliminarProducto(Nodo * cabeza, int codigo);
 
-6. Manejo de Archivos
+Manejo de Archivos
 // producto.c
 void guardarInventario(Nodo * cabeza) {
     FILE * archivo = fopen(ARCHIVO_INVENTARIO, "wb");
@@ -96,7 +96,7 @@ Nodo * cargarInventario() {
     // Lectura binaria
 }
 
-7. Funciones y Procedimientos
+ Funciones y Procedimientos
 // Todas las funciones en español con responsabilidades claras:
 void modificarProducto(Nodo * cabeza, int codigo);
 void mostrarProductos(Nodo * cabeza);
@@ -137,7 +137,7 @@ Nota: El inventario se guarda automáticamente en inventario.dat
 VERSIÓN SIMPLIFICADA:
 Cumplimiento de Requisitos Técnicos
 
-1. Estructuras de Control e Iteradores
+Estructuras de Control e Iteradores
 ```c
 // Uso de switch para menú principal
 switch (opcion) {
@@ -150,7 +150,7 @@ for (int i = 0; i < totalProductos; i++) {
     // Procesamiento de productos
 }
 
-2. Interacción con el Usuario
+Interacción con el Usuario
 // Entrada por consola
 printf("Precio: ");
 scanf("%f", &p.precio);
@@ -159,7 +159,7 @@ scanf("%f", &p.precio);
 FILE * archivo = fopen(ARCHIVO_INVENTARIO, "wb");
 fwrite(inventario, sizeof(Producto), totalProductos, archivo);
 
-3. Estructuras (struct)
+Estructuras (struct)
 typedef struct {
     int codigo;
     char nombre[MAX_NOMBRE];
@@ -167,7 +167,7 @@ typedef struct {
     int stock;
 } Producto;  // Agrupa datos relacionados
 
-4. Ordenamiento y Búsqueda
+Ordenamiento y Búsqueda
 // Bubble Sort para ordenar por precio
 void ordenarPorPrecio() {
     for (int i = 0; i < totalProductos - 1; i++) {
@@ -184,7 +184,7 @@ if (strstr(inventario[i].nombre, nombre) != NULL) {
     // Producto encontrado
 }
 
-5. Estructuras Dinámicas
+Estructuras Dinámicas
 // Aunque usa arreglo estático, implementa lógica dinámica:
 Producto inventario[MAX_PRODUCTOS];  // Capacidad máxima
 int totalProductos = 0;               // Contador dinámico
@@ -198,7 +198,7 @@ void eliminarProducto() {
     totalProductos--;  // Actualiza contador
 }
 
-6. Manejo de Archivos
+Manejo de Archivos
 // Guardado binario eficiente
 void guardarInventario() {
     fwrite(&totalProductos, sizeof(int), 1, archivo);
@@ -210,7 +210,7 @@ int main() {
     cargarInventario();  // Recupera datos al iniciar
 }
 
-7. Funciones y Procedimientos
+Funciones y Procedimientos
 // Modularización clara en español:
 void agregarProducto();     // Añade nuevos items
 void buscarPorNombre();      // Búsqueda parcial
@@ -265,7 +265,7 @@ Ordenamiento	                 Bubble Sort sobre arreglo	                 Bubble 
 Gestión de memoria	             Automática (estática)	                 Manual (liberación explícita)
 
 
-7. Ventajas y Desventajas
+Ventajas y Desventajas
 Versión Simplificada	                        Versión Modular
 ✅ Más fácil de entender para principiantes	✅ Arquitectura profesional
 ✅ Código compacto (230 líneas)	✅ Manejo de memoria más eficiente
