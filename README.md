@@ -7,19 +7,21 @@ Descripción:
 
 En este Github se presentan 4 programas, pero en realidad son 2, 1 requiere que en la terminal se ejecute un comando que los una a los 3 para ser ejecutado, y el otro es una versión simplificada, en un solo programa. Primero vamos a empezar explicando el "triprograma" y como funciona este. Luego, explicaremos su versión individualizada y como funciona, para luego terminar comparandolos a los 2.
 
-TRIPROGRAMA:
+TRIPROGRAMA (O MODULAR):
 - Agregar, eliminar y modificar productos (código, nombre, precio, stock)
 - Búsquedas por código o nombre
 - Visualización de productos ordenados por precio
 - Almacenamiento persistente en archivo binario
 - Interfaz intuitiva con validación de datos
 
-VERSIÓN SIMPLIFICADA:
--Sencillez: Ideal para principiantes en C
--Eficiencia: Menos sobrecarga que listas enlazadas
--Persistencia: Datos sobreviven al cerrar el programa
--Portabilidad: Solo 1 archivo fuente necesario
--Cumplimiento de Requisitos Técnicos
+VERSIÓN SIMPLIFICADA
+Sencillez: Ideal para principiantes en C
+
+Eficiencia: Menos sobrecarga que listas enlazadas
+
+Persistencia: Datos sobreviven al cerrar el programa
+
+Portabilidad: Solo 1 archivo fuente necesario
 
 Ahrora vamos a ver a detalle como funcionan estos programas, empezando por la version Modular (TRIPROGRAMA)
 
