@@ -1,5 +1,5 @@
 # TPIEscenario3
-Integrantes: Retamoso mariano José (Dni:46385154, Correo: retamosomariano7@gmail.com)
+Integrantes: Retamoso Mariano José (Dni:46385154, Correo: retamosomariano7@gmail.com)
 
 Tema Numero 3: Inventario de Productos de un Comercio
 
